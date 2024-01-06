@@ -1,0 +1,86 @@
+:root {
+  /* 色管理用の変数 */
+  --black-color: #333;
+  --primary-color: #00AFA8;
+  --secondary-color: #63d297;
+  --gray-color: #dadce0;
+}
+
+/* ---------- base ---------- */
+body {
+  color: var(--black-color);
+  font-size: 16px;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.75;
+}
+
+.l_header {
+  background-color: var(--primary-color);
+}
+
+/* ---------- calendar ---------- */
+/* .calendar tr {
+  border-bottom: 1px solid var(--gray-color);
+} */
+
+/* .calendar_table-head tr {
+  height: 40px;
+}
+
+.calendar_table-body tr {
+  height: 100px;
+  vertical-align: top;
+} */
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 98px);
+}
+
+.calendar_table-head {
+  height: 30px;
+  border-bottom: 1px solid var(--gray-color);
+}
+
+.calendar_table-row {
+  flex: 1 1 0%;
+}
+
+/* カレンダーの行線 */
+.calendar_table-row:not(:last-child) {
+  border-bottom: 1px solid var(--gray-color);
+}
+
+.calendar_table-data {
+  flex: 1 1 0%;
+}
+
+/* カレンダーの列線 */
+.calendar_table-data:not(:last-child) {
+  border-right: 1px solid var(--gray-color);
+}
+
+.calendar_table-data.is-disabled {
+  color: var(--gray-color);
+}
+
+.calendar_date {
+  width: 28px;
+  height: 28px;
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.calendar_event {
+  background-color: var(--secondary-color);
+  margin-top: 8px;
+  display: block;
+  text-align: left;
+  cursor: pointer;
+}
+
+.calendar_event:hover {
+  opacity: 0.7;
+}
