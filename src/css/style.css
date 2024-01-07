@@ -1,8 +1,8 @@
 :root {
   /* 色管理用の変数 */
   --black-color: #333;
-  --primary-color: #00AFA8;
-  --secondary-color: #63d297;
+  --primary-color: #ffc700;
+  --secondary-color: #333;
   --gray-color: #dadce0;
 }
 
