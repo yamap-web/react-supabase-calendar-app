@@ -60,7 +60,7 @@ const CalendarBody = (props: CalendarBodyProps) => {
                 dayCount++;
                 return(
                   <div className="calendar_table-data p-1 js_calendar-date" key={day}>
-                    <span className="calendar_date bg-primary text-white">{num}</span>
+                    <span className="calendar_date bg-today text-white">{num}</span>
 
                     <EventBadges events={props.events} year={thisYear} month={thisMonth} date={num} setTargetEvent={props.setTargetEvent} />
 
